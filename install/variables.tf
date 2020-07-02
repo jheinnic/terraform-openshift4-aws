@@ -81,6 +81,12 @@ variable "openshift_installer_url" {
   default     = "https://mirror.openshift.com/pub/openshift-v4/clients/ocp/latest"
 }
 
+variable "private_ssh_key_file" {
+  type        = string
+  description = "path to an unencrypted PEM-encoded private SSH key"
+  default     = "~/.ssh/id_rsa"
+}
+
 variable "aws_access_key_id" {
   type        = string
   description = "AWS access key"
